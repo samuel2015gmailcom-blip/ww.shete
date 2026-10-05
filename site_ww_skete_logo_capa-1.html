@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ww.skete — Cultura do Skate</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#0b0b0b;color:#fff;line-height:1.5}
+nav{position:fixed;top:0;width:100%;z-index:10;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;background:rgba(11,11,11,.9);backdrop-filter:blur(8px)}
+.logo{font-size:28px;font-weight:900;letter-spacing:-2px;color:#ff5a1f}
+nav a{color:#fff;text-decoration:none;margin-left:25px;font-weight:bold}
+nav a:hover{color:#ff5a1f}
+.hero{min-height:100vh;padding:150px 7% 80px;display:flex;align-items:center;background:linear-gradient(110deg,#0b0b0b 35%,rgba(11,11,11,.25)),url('https://images.unsplash.com/photo-1520045892732-304bc3ac5d8e?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero-content{max-width:700px}
+.tag{color:#ff5a1f;font-weight:900;letter-spacing:3px;text-transform:uppercase}
+h1{font-size:clamp(60px,10vw,125px);line-height:.86;margin:18px 0;font-weight:1000;letter-spacing:-7px}
+.hero p{font-size:20px;color:#ddd;max-width:570px;margin-bottom:30px}
+.btn{display:inline-block;background:#ff5a1f;color:#fff;text-decoration:none;padding:15px 25px;border-radius:5px;font-weight:900}
+section{padding:90px 7%}
+.title{font-size:45px;margin-bottom:35px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#171717;border-radius:10px;overflow:hidden}
+.card img{width:100%;height:240px;object-fit:cover}
+.card div{padding:22px}
+.card h3{font-size:24px;margin-bottom:8px}
+.card p{color:#aaa}
+.about{background:#151515;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about img{width:100%;border-radius:12px}
+.about p{color:#bbb;font-size:18px}
+.stats{display:flex;gap:50px;margin-top:30px}
+.stat strong{display:block;font-size:38px;color:#ff5a1f}
+footer{padding:35px 7%;background:#050505;color:#888;text-align:center}
+@media(max-width:800px){nav .links{display:none}.grid,.about{grid-template-columns:1fr}.hero{padding-top:130px}.stats{gap:25px}h1{letter-spacing:-4px}}
+
+.shop{padding:70px 7%;background:#101010}
+.shop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.product{background:#171717;border-radius:12px;overflow:hidden;border:1px solid #292929}
+.product img{width:100%;height:230px;object-fit:cover}
+.product-info{padding:22px}
+.product h3{font-size:25px;margin-bottom:7px}
+.product p{color:#aaa;margin-bottom:16px}
+.price{font-size:24px;font-weight:900;margin-bottom:18px}
+.buy{display:inline-block;background:#ff5a1f;color:#fff;text-decoration:none;padding:13px 20px;border-radius:6px;font-weight:900}
+.buy:hover{background:#ff7a45}
+@media(max-width:800px){.shop-grid{grid-template-columns:1fr}}
+
+.ww-logo-cover{
+  width:min(520px,82vw);
+  margin:0 auto 18px;
+  color:#fff;
+  filter:drop-shadow(0 0 22px rgba(255,90,31,.22));
+}
+.ww-logo-cover svg{display:block;width:100%;height:auto}
+.hero-content h1{letter-spacing:.12em;margin:6px 0 18px}
+.hero-btn{
+  display:inline-block;background:#ff5a1f;color:#fff;text-decoration:none;
+  font-weight:900;padding:14px 24px;border-radius:6px;margin-top:8px;transition:.2s ease
+}
+.hero-btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">ww.skete</div>
+  <div class="links">
+    <a href="#compras">Comprar</a>
+    <a href="#acessorios">Acessórios</a>
+    <a href="#manobras">Manobras</a>
+    <a href="#cultura">Cultura</a>
+    <a href="#sobre">Sobre</a>
+  </div>
+</nav>
+
+
+
+
+<section class="shop" id="acessorios">
+  <h2 class="title">Acessórios</h2>
+  <div class="shop-grid">
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=900&q=85" alt="Boné Five Panel Wblack Ray Yellow">
+      <div class="product-info">
+        <h3>Boné Five Panel Wblack Ray Yellow</h3>
+        <p>Five panel com visual street e destaque Ray Yellow.</p>
+        <div class="price">R$ 89,90</div>
+        <a class="buy" href="#comprar">COMPRAR AGORA</a>
+      </div>
+    </article>
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=900&q=85" alt="Boné Five Panel Wblack Basic">
+      <div class="product-info">
+        <h3>Boné Five Panel Wblack Basic</h3>
+        <p>Modelo básico, clean e fácil de combinar.</p>
+        <div class="price">R$ 79,90</div>
+        <a class="buy" href="#comprar">COMPRAR AGORA</a>
+      </div>
+    </article>
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85" alt="Whastbag Wblack Ray Yellow">
+      <div class="product-info">
+        <h3>Whastbag Wblack Ray Yellow</h3>
+        <p>Bolsa compacta para completar o estilo street.</p>
+        <div class="price">R$ 99,90</div>
+        <a class="buy" href="#comprar">COMPRAR AGORA</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="shop" id="compras">
+  <h2 class="title">Ofertas WW.SKETE</h2>
+  <div class="shop-grid">
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1520045892732-304bc3ac5d8e?auto=format&fit=crop&w=900&q=85" alt="Camiseta street">
+      <div class="product-info">
+        <h3>Camiseta Street</h3>
+        <p>Estilo streetwear para o dia a dia.</p>
+        <div class="price">R$ 39,90</div>
+        <a class="buy" href="#comprar">COMPRAR</a>
+      </div>
+    </article>
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1547447134-cd3f5c716030?auto=format&fit=crop&w=900&q=85" alt="Tênis street">
+      <div class="product-info">
+        <h3>Tênis Street</h3>
+        <p>Confortável, moderno e pronto para a rua.</p>
+        <div class="price">R$ 89,90</div>
+        <a class="buy" href="#comprar">COMPRAR</a>
+      </div>
+    </article>
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1564982752979-3f7bc974d29a?auto=format&fit=crop&w=900&q=85" alt="Moletom street">
+      <div class="product-info">
+        <h3>Moletom Oversized</h3>
+        <p>Visual oversized com estilo urbano.</p>
+        <div class="price">R$ 69,90</div>
+        <a class="buy" href="#comprar">COMPRAR</a>
+      </div>
+    </article>
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1520045892732-304bc3ac5d8e?auto=format&fit=crop&w=900&q=85" alt="Boné street">
+      <div class="product-info">
+        <h3>Boné Street</h3>
+        <p>Acessório para completar o visual.</p>
+        <div class="price">R$ 29,90</div>
+        <a class="buy" href="#comprar">COMPRAR</a>
+      </div>
+    </article>
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1547447134-cd3f5c716030?auto=format&fit=crop&w=900&q=85" alt="Calça cargo">
+      <div class="product-info">
+        <h3>Calça Cargo</h3>
+        <p>Modelagem street com vários bolsos.</p>
+        <div class="price">R$ 59,90</div>
+        <a class="buy" href="#comprar">COMPRAR</a>
+      </div>
+    </article>
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1536318431364-5cc762cfc8ec?auto=format&fit=crop&w=900&q=85" alt="Camiseta oversized">
+      <div class="product-info">
+        <h3>Camiseta Oversized</h3>
+        <p>Conforto e estilo para qualquer rolê.</p>
+        <div class="price">R$ 44,90</div>
+        <a class="buy" href="#comprar">COMPRAR</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="ww-logo-cover" aria-label="Logo WW">
+      <svg viewBox="0 0 520 300" role="img" aria-label="Logo WW">
+        <g fill="none" stroke="currentColor" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M58 82 L105 210 L154 115 L205 210 L252 82"/>
+          <path d="M268 82 L315 210 L364 115 L415 210 L462 82"/>
+        </g>
+        <path d="M205 54 L260 25 L315 54 L260 73 Z" fill="currentColor"/>
+        <path d="M115 246 C190 270 330 270 405 246" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <p>SKATE • STREETWEAR • CULTURA</p>
+    <h1>WW.SKETE</h1>
+    <a href="#compras" class="hero-btn">COMPRAR AGORA</a>
+  </div>
+</header>
+
+<section id="manobras">
+  <h2 class="title">Manobras clássicas</h2>
+  <div class="grid">
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1547447134-cd3f5c716030?auto=format&fit=crop&w=900&q=80" alt="Skatista andando">
+      <div><h3>Ollie</h3><p>A base de quase tudo. Salte com o skate sem usar as mãos.</p></div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1520045892732-304bc3ac5d8e?auto=format&fit=crop&w=900&q=80" alt="Skate em ação">
+      <div><h3>Kickflip</h3><p>O skate gira no ar enquanto você mantém o controle do movimento.</p></div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1536318431364-5cc762cfc8ec?auto=format&fit=crop&w=900&q=80" alt="Skatista em pista">
+      <div><h3>Grind</h3><p>Deslize pelo obstáculo e encontre seu próprio estilo.</p></div>
+    </article>
+  </div>
+</section>
+
+<section id="cultura" class="about">
+  <img src="https://images.unsplash.com/photo-1564982752979-3f7bc974d29a?auto=format&fit=crop&w=1100&q=80" alt="Cultura do skate">
+  <div>
+    <h2 class="title">Mais que um esporte.</h2>
+    <p>Skate é criatividade, liberdade e comunidade. Cada rua vira uma pista e cada tentativa faz parte da evolução.</p>
+    <div class="stats">
+      <div class="stat"><strong>01</strong>Estilo</div>
+      <div class="stat"><strong>∞</strong>Possibilidades</div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <h2 class="title">Faça do seu jeito.</h2>
+  <p style="max-width:700px;color:#aaa;font-size:20px">Escolha seu shape, encontre sua pista, reúna a galera e vá andar. O importante é continuar evoluindo.</p>
+</section>
+
+<footer>ww.skete — Feito para quem não para de andar.</footer>
+</body>
+</html>
